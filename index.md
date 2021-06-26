@@ -11,7 +11,7 @@ Mainly used to learn graphics programming.
 ## [UnImage Object v2](https://github.com/Reimnop/UnImageObject-v2)
 A tool for converting images to Project Arrhythmia prefabs.
 ## [PA Animator](https://github.com/Reimnop/PAAnimator)
-A aingle object animator for Project Arrhythmia.
+A single object animator for Project Arrhythmia.
 
 Useful for curved movements.
 ## [PA Prefab Toolkit](https://github.com/Reimnop/PA-Prefab-Toolkit)
