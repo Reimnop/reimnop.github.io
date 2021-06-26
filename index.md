@@ -7,6 +7,9 @@ LeaderEngine is an incomplete 3D game engine that I really enjoy working on.
 
 Mainly used to learn graphics programming.
 
+### Changelogs
+Just implemented Cascaded Shadow Mapping! :)
+
 # My Project Arrhythmia tools
 ## [UnImage Object v2](https://github.com/Reimnop/UnImageObject-v2)
 A tool for converting images to Project Arrhythmia prefabs.
