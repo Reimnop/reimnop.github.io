@@ -1,5 +1,5 @@
 # This is Reimnop's GitHub profile!
-I have 4 years of experience and I mainly work on graphics programming and game engine development.
+I am a student who has 4 years of experience in programming.
 
 # My projects
 ## [LeaderEngine](https://github.com/Reimnop/LeaderEngine)
