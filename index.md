@@ -19,4 +19,4 @@ A library for modifying and creating Project Arrhythmia prefabs.
 
 # Social
 ## Cool people!
-[GermanBread](https://github.com/GermanBread), Enchart, [Xenon1345](https://github.com/Xenon1345)
+[GermanBread](https://github.com/GermanBread), [Enchart](https://www.youtube.com/channel/UC4Q_gjxcB4kvae-WHi5-yNQ), [Xenon1345](https://github.com/Xenon1345), [GincentVeez](https://github.com/gabrielvicentealva)
