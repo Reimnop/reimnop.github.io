@@ -5,21 +5,118 @@
 
 body {
     font-family: Inconsolata;
+    background: rgb(22, 20, 20);
+    display: flex;
+    flex-direction: column;
 }
 
-body {
-    background: rgb(237, 237, 237);
+a {
+    color: rgb(242,50,105);
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
 }
 
 .background-header {
     display: inline-block;
-    vertical-align: top;
-    background-color: rgb(68, 68, 68);
+    position: relative;
+    left: 0;
+    top: 0;
+    background: rgb(35, 33, 33);
     width: 100%;
     height: 80px;
+    border-radius: 5px;
 }
 
 .header {
     text-align: center;
-    color: rgb(237, 237, 237);
+    color: rgb(233, 232, 234);
+}
+
+.container {
+    width: fit-content;
+}
+
+.content-background {
+    margin-top: 10px;
+    margin-left: 370px;
+    width: calc(100% - 385px);
+    height: calc(100% - 170px);
+    position: absolute;
+    background: rgb(35, 33, 33);
+    color:rgb(233, 232, 234);
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.content {
+    margin-left: 10px;
+}
+
+.sidebar {
+    float: left;
+    width: 360px;
+    height: fit-content;
+    top: 10px;
+    position: relative;
+    background: rgb(35, 33, 33);
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar-button {
+    width: 340px;
+    height: 40px;
+    left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    position: relative;
+    background: rgb(31, 28, 28);
+    cursor: pointer;
+}
+
+.sidebar-button:hover {
+    background: rgb(233, 232, 234);
+    transition: 0.4s;
+}
+
+.sidebar-button:hover .sidebar-text {
+    color: rgb(35, 33, 33);
+}
+
+.sidebar-button:hover .red-line-sidebar-btn {
+    opacity: 0;
+}
+
+.red-line-sidebar-btn {
+    width: 5px;
+    height: 100%;
+    float: left;
+    background: rgb(242,50,105);
+}
+
+.sidebar-text {
+    margin-left: 15px;
+    color: rgb(233, 232, 234);
+}
+
+.background-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: rgb(35, 33, 33);
+    border-radius: 5px;
+    width: 100%;
+    height: 60px;
+}
+
+.footer {
+    text-align: center;
+    white-space: nowrap;
+    color: rgb(233, 232, 234);
 }
