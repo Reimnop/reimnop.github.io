@@ -1,4 +1,4 @@
 ## Reimnop's homepage
-This is the repo for my github pages
+This is the repo for my website
 
-Go to https://reimnop.github.io for the actual page
+Go to https://reimnop.github.io for the beauty
