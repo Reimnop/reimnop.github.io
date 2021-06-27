@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Inconsolata;
+    src: url(Inconsolata.ttf);
+}
+
+body {
+    font-family: Inconsolata;
+}
