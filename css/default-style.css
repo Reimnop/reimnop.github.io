@@ -1,0 +1,25 @@
+@font-face {
+    font-family: Inconsolata;
+    src: url(../fonts/Inconsolata.ttf);
+}
+
+body {
+    font-family: Inconsolata;
+}
+
+body {
+    background: rgb(237, 237, 237);
+}
+
+.background-header {
+    display: inline-block;
+    vertical-align: top;
+    background-color: rgb(68, 68, 68);
+    width: 100%;
+    height: 80px;
+}
+
+.header {
+    text-align: center;
+    color: rgb(237, 237, 237);
+}
