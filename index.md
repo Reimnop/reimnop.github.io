@@ -1,6 +1,8 @@
 # This is Reimnop's GitHub profile!
 I am a student who has 4 years of experience in programming.
 
+Main Languages: C#, C++
+
 # My projects
 ## [LeaderEngine](https://github.com/Reimnop/LeaderEngine)
 LeaderEngine is an incomplete 3D game engine that I really enjoy working on.
