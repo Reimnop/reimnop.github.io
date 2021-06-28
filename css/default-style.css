@@ -45,8 +45,8 @@ span {
 
 .content-background {
     margin-top: 10px;
-    margin-left: 370px;
-    width: calc(100% - 385px);
+    margin-left: 310px;
+    width: calc(100% - 325px);
     height: calc(100% - 170px);
     position: absolute;
     background: rgb(35, 33, 33);
@@ -62,7 +62,7 @@ span {
 
 .sidebar {
     float: left;
-    width: 360px;
+    width: 300px;
     height: fit-content;
     max-height: calc(100vh - 170px);
     top: 10px;
@@ -74,13 +74,15 @@ span {
 }
 
 .sidebar-button {
-    width: 340px;
+    width: calc(100% - 20px);
     height: 40px;
     left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 30px;
     position: relative;
+    white-space: nowrap;
+    overflow-x: hidden;
     background: rgb(31, 28, 28);
     cursor: pointer;
 }
