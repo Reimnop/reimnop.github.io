@@ -102,7 +102,7 @@ h3 {
     color: rgb(233, 232, 234);
 }
 
-#hyperlink {
+.hyperlink {
     color: rgb(242,50,105);
     font-size: 1.4em;
 }
