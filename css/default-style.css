@@ -86,12 +86,7 @@ h3 {
 .sidebar-button:hover {
     background: rgb(233, 232, 234);
     color: rgb(35, 33, 33);
-    transition: 0.4s;
-}
-
-.sidebar-button:hover .red-line-sidebar-btn {
-    opacity: 0;
-    transition: 0.4s;
+    transition: 0.25s;
 }
 
 .red-line-sidebar-btn {
