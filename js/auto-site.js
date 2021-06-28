@@ -3,7 +3,9 @@ let pages = [
     ["LeaderEngine", "/leaderengine.html"],
     ["UnImage Object v2", "/unimageobjectv2.html"],
     ["PA Animator", "/paanimator.html"],
-    ["PA Prefab Toolkit", "/paprefabtoolkit.html"]
+    ["PA Prefab Toolkit", "/paprefabtoolkit.html"],
+    ["Enchariud", "/enchariud.html"],
+    ["DataM", "/datam.html"]
 ];
 
 function init() {
