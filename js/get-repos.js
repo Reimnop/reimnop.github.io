@@ -1,5 +1,4 @@
-//https://api.github.com/users/Reimnop/repos
-$.getJSON("/data.json", function(repos, status) {
+$.getJSON("https://api.github.com/users/Reimnop/repos", function(repos, status) {
     let content = document.getElementsByClassName("content")[0];
     for (let i = 0; i < repos.length; i++) {
         let msec = Date.parse(repos[i].pushed_at);
