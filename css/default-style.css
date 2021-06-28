@@ -61,6 +61,7 @@ span {
     float: left;
     width: 360px;
     height: fit-content;
+    max-height: calc(100vh - 170px);
     top: 10px;
     position: relative;
     background: rgb(35, 33, 33);
