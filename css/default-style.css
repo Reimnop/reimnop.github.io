@@ -10,11 +10,15 @@ body {
 
 a {
     color: rgb(242,50,105);
-    font-size: 24px;
+    font-size: 1.5em;
 }
 
 p {
-    font-size: 24px;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 2em;
 }
 
 span {
