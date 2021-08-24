@@ -6,7 +6,8 @@ let pages = [
     ["PA Prefab Toolkit", "paprefabtoolkit.html"],
     ["All repositories", "allrepos.html"],
     ["Enchariud", "enchariud.html"],
-    ["DataM", "datam.html"]
+    ["DataM", "datam.html"],
+	["ol6", "ol6.html"]
 ];
 
 let sidebar = document.getElementById("sidebar");
