@@ -7,16 +7,17 @@ let pages = [
     ["All repositories", "allrepos.html"],
     ["Enchariud", "enchariud.html"],
     ["DataM", "datam.html"],
-	["ol6", "ol6.html"]
+	  ["ol6", "ol6.html"],
+    ["lefil", "lefil.html"]
 ];
 
 let sidebar = document.getElementById("sidebar");
 for (let i = 0; i < pages.length; i++) {
     let page = pages[i];
-    sidebar.innerHTML += 
+    sidebar.innerHTML +=
         `<a class="sidebar-button" href="` + page[1] + `">
-            <div class="red-line-sidebar-btn" ></div>` + 
-            page[0] + 
+            <div class="red-line-sidebar-btn" ></div>` +
+            page[0] +
         `</a>`;
 }
 let currentPagePath = window.location.pathname;
