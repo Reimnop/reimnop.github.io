@@ -7,7 +7,7 @@ let pages = [
     ["All repositories", "allrepos.html"],
     ["Enchariud", "enchariud.html"],
     ["DataM", "datam.html"],
-	  ["ol6", "ol6.html"],
+    ["ol6", "ol6.html"],
     ["lefil", "lefil.html"]
 ];
 
