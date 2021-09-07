@@ -1,20 +1,30 @@
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}  
+class Scrambler {
+    constructor(text, elem) {
+        this.text = text;
+        this.elem = elem;
+        this.textIndex = 0;
+        this.currentText = "";
 
-async function scramble(text, element) {
-    element.innerHTML = "";
-    let newText = "";
-    for (let i = 0; i < text.length; i++) {
-        newText += text[i];
-        element.innerHTML = newText + "▒░░";
-        await sleep(5);
+        window.requestAnimationFrame((ts) => this.step(ts));
     }
 
-    element.innerHTML = text;
+    step(timestamp) {
+        this.elem.innerHTML = this.currentText + "▒░░";
+        this.currentText += this.text[this.textIndex];
+
+        if (this.textIndex < this.text.length) {
+            window.requestAnimationFrame((ts) => this.step(ts));
+            this.textIndex++;
+        }
+        else {
+            this.elem.innerHTML = this.text;
+        }
+    }
 }
 
-let elements = document.getElementsByClassName("scramble");
-for (let i = 0; i < elements.length; i++) {
-    scramble(elements[i].innerHTML, elements[i]);
+function scrambleText(className) {
+    let elements = document.getElementsByClassName(className);
+    for (let i = 0; i < elements.length; i++) {
+        new Scrambler(elements[i].innerHTML, elements[i]);
+    }
 }

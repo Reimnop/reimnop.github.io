@@ -15,7 +15,7 @@ $.getJSON("https://api.github.com/users/Reimnop/repos", function(repos, status) 
             </a>`
     }
 
-    startScrambling("scramble-def");
+    scrambleText("scramble-def");
 });
 
 Date.prototype.ddmmyyyy = function() {
