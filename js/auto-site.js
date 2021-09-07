@@ -14,9 +14,9 @@ for (let i = 0; i < pages.length; i++) {
     let page = pages[i];
     sidebar.innerHTML +=
         `<a class="sidebar-button" href="` + page[1] + `">
-            <div class="red-line-sidebar-btn" ></div>` +
-            page[0] +
-        `</a>`;
+            <div class="red-line-sidebar-btn" ></div>
+            <div class="scramble">` + page[0] + `</div>
+        </a>`;
 }
 let currentPagePath = window.location.pathname;
 let currentPageIndex = 0;

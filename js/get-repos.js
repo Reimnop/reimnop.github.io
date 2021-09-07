@@ -8,12 +8,14 @@ $.getJSON("https://api.github.com/users/Reimnop/repos", function(repos, status) 
             `<a href="` + repos[i].html_url + `" class="repo-button">
                 <div class="repo-red-line"></div>
                 <div class="repo-text-container">
-                    <b class="repo-name">` + repos[i].name + `</b>
-                    <i class="repo-desc">` + (repos[i].description == null ? "No description" : repos[i].description) + `</i>
-                    <i class="repo-last-commit">Last commit: ` + date.ddmmyyyy() + `
+                    <b class="repo-name scramble-def">` + repos[i].name + `</b>
+                    <i class="repo-desc scramble-def">` + (repos[i].description == null ? "No description" : repos[i].description) + `</i>
+                    <i class="repo-last-commit scramble-def">Last commit: ` + date.ddmmyyyy() + `
                 </div>
             </a>`
     }
+
+    startScrambling("scramble-def");
 });
 
 Date.prototype.ddmmyyyy = function() {
