@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('../fonts/Inconsolata.ttf');
+}
+
+@keyframes header-appear {
+    from {opacity: 0; transform: translateY(-120%);}
+    to {opacity: 1.0; transform: translateY(0);}
+}
+
+@keyframes collapse-btn-appear {
+    from {opacity: 0; transform: translateY(-120%);}
+    to {opacity: 1.0; transform: translateY(0);}
+}
+
+@keyframes footer-line-pulsating {
+    from {box-shadow: 0 0 7.5px 1.5px rgb(70, 218, 255);}
+    to {box-shadow: 0 0 10px 2px rgb(70, 218, 255);}
+}
+
+body {
+    font-family: 'Inconsolata';
+    font-size: 24px;
+    color: rgb(224, 224, 224);
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 0, 0), rgb(23, 25, 34));
+}
+
+.wrapper {
+    margin: auto;
+    width: 50%;
+    height: fit-content;
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.header {
+    z-index: 1;
+    font-size: 18px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    animation: header-appear ease-out 1s;
+    border-radius: 2.5px;
+    background: rgb(50, 50, 50, 0.5);
+}
+
+.header .header-text {
+    z-index: 1;
+    text-align: center;
+}
+
+.content-box {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 2.5px;
+    background: rgb(50, 50, 50, 0.5);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
+}
+
+.content {
+    margin: 10px;
+}
+
+.footer-line {
+    width: calc(100% + 5px);
+    z-index: 1;
+    margin-top: auto;
+    margin-left: -2.5px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: rgb(125, 229, 255);
+    animation: footer-line-pulsating ease-in-out infinite alternate 1s;
+}
+
+.collapse {
+    z-index: 0;
+    font-family: 'Inconsolata';
+    font-size: 24px;
+    color: rgb(224, 224, 224);
+    text-align: left;
+    width: 100%;
+    height: 40px;
+    border-radius: 2.5px;
+    background: rgb(50, 50, 50, 0.5);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    opacity: 0;
+    animation: collapse-btn-appear ease-out 1s forwards;
+}
+
+.collapse-active, .collapse:hover {
+    transition-duration: 0.25s;
+    background-color: rgb(50, 50, 50, 0.75);
+}
+
+.collapse:after {
+    content: '+';
+    float: right;
+    margin-left: 5px;
+}
+  
+.collapse-active:after {
+    content: '-';
+}
+
+@media screen and (max-width: 900px) {
+    .wrapper {
+        margin: 0px;
+        width: 100%;
+    }
+}
