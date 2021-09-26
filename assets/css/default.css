@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Dosis';
+    src: url('../fonts/Dosis.ttf');
+}
+
+body {
+    font-family: 'Dosis';
+    font-size: 24px;
+    color: rgb(224, 224, 224);
+}
+
+a {
+    color: rgb(224, 224, 224);
+}
+
+.background {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 0, 0), rgb(23, 25, 34));
+}
+
+.logo-area {
+    display: grid;
+    place-content: center;
+}
+
+.logo {
+    padding-top: 20em;
+}
+
+@keyframes scroll-text-appear {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.scroll-text {
+    position: fixed;
+    bottom: 15px;
+    left: calc(50vw - 4.5ch);
+    color: rgb(180, 180, 180);
+    opacity: 0;
+    animation: scroll-text-appear 1.5s ease-out 2.5s forwards;
+    font-size: 20px;
+    transition-duration: 0.2s;
+}
+
+.scroll-text:hover {
+    font-size: 22px;
+}
