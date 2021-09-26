@@ -28,7 +28,7 @@ a {
     place-content: center;
 }
 
-#logo {
+.logo {
     padding-top: calc(50vh - 29.448px);
 }
 
