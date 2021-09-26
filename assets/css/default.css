@@ -28,8 +28,8 @@ a {
     place-content: center;
 }
 
-.logo {
-    padding-top: 20em;
+#logo {
+    padding-top: calc(50vh - 29.448px);
 }
 
 @keyframes scroll-text-appear {
