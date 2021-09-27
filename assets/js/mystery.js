@@ -132,7 +132,6 @@ async function action_1() {
 	await typeWrite("I'll close it for you.", 50);
 	await sleep(500);
 	await typeWrite(" You better delete the file actually.", 50);
-	await sleep(1500);
     Cookies.set("value", current_num + 1);
 }
 
@@ -150,7 +149,6 @@ async function action_2() {
 	await sleep(500);
     write_area.innerHTML += "<br>";
 	await typeWrite("Right now.", 40);
-	await sleep(500);
 	Cookies.set("value", current_num + 1);
 }
 
@@ -158,7 +156,6 @@ async function action_5() {
     await typeWrite("ENCH");
     write_area.innerHTML += "<br><br>";
     await typeWrite("Ench is a character made by enchart and the antagonist of enchart's Peer Gynt level.", 50);
-	await sleep(1500);
     Cookies.set("value", current_num + 1);
 }
 
@@ -166,7 +163,6 @@ async function action_6() {
     await typeWrite("HISTORY");
     write_area.innerHTML += "<br><br>";
     await typeWrite("In enchart's Peer Gynt, Ench got stabbed by the pink triangle and tried to kill the player that got in his way with the help of his new powers. After a while a strange \"Leader\" sign appears and stabs Ench to turn him into his Leader form. Then he starts trying to smash the player with hammers and after a few tries he traps the player between pink walls that going to crush him. But right before it some other shapes appear, save the player from walls and kill Ench.", 50);
-	await sleep(2000);
     Cookies.set("value", current_num + 1);
 }
 
@@ -176,7 +172,6 @@ async function action_7() {
     await typeWrite("Ench is a mint square with black eyes and mouth white hands. He also had a pink triangle in the right side before his death. In his corrupted form, his mouth is replaced by four teeth and his body is pink. In the Leader form, he has his regular mouth, and some parts of his body are chipped.", 50);
     write_area.innerHTML += "<br>";
     await typeWrite("His attacks are usually pink lasers, bullets and hammers. He can also teleport the player to The Pink Tower with large amount of traps.", 50);
-	await sleep(2000);
     Cookies.set("value", current_num + 1);
 }
 
@@ -208,25 +203,21 @@ async function action_12() {
 
 async function action_13() {
     await typeWrite("PLEASE STOP aHR0cHM6Ly", 25);
-	await sleep(5000);
     Cookies.set("value", current_num + 1);
 }
 
 async function action_14() {
     await typeWrite("WE'RE ALL 90aW55dXJs IN DANGER", 25);
-	await sleep(3000);
     Cookies.set("value", current_num + 1);
 }
 
 async function action_15() {
     await typeWrite("I LOVE PGEV, IT'S LmNvbS9wZ2 THE BEST LEVEL IN PA!", 25);
-	await sleep(3000);
     Cookies.set("value", current_num + 1);
 }
 
 async function action_16() {
     await typeWrite("This file does not contain any V2ZG90ZXhl", 25);
-	await sleep(3000);
     Cookies.set("value", current_num + 1);
 }
 
