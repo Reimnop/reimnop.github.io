@@ -43,12 +43,12 @@ a {
     color: rgb(224, 224, 224, 0.5);
     opacity: 0;
     animation: scroll-text-appear 1.5s ease-out 2.5s forwards;
-    font-size: 20px;
+    font-size: 0.8em;
     transition-duration: 0.2s;
 }
 
 .scroll-text:hover {
-    font-size: 22px;
+    font-size: 0.9em;
 }
 
 .main-content-area {
@@ -88,13 +88,19 @@ a {
 .repo-btn-area {
     display: grid;
     gap: 20px;
+    grid-template-columns: auto auto auto;
 }
 
 .repo-btn {
-    display: block;
-    width: 340px;
-    height: 120px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
     background: rgb(31, 31, 31, 0.5);
+    transition-duration: 0.2s;
+}
+
+.repo-btn:hover {
+    transform: scale(102.5%);
 }
 
 .repo-btn .repo-btn-line {
@@ -103,7 +109,26 @@ a {
     background: rgb(100, 219, 255);
 }
 
-@media screen and (max-width: 800px) {
+.repo-btn .repo-btn-name {
+    padding-left: 5px;
+    width: calc(100% - 5px);
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.repo-btn .repo-btn-description {
+    padding-left: 5px;
+    width: calc(100% - 5px);
+}
+
+.repo-btn .repo-btn-last-commit {
+    padding-left: 5px;
+    width: calc(100% - 5px);
+    font-style: italic;
+    margin-top: auto;
+}
+
+@media screen and (max-width: 1024px) {
     .main-content-area {
         width: 95%;
     }

@@ -12,11 +12,19 @@ for (let i = 0; i < content_boxes.length; i++) {
 }
 
 function calculateOpacity(bounds) {
+    const threshold = 180;
+
     let top = bounds.top + window.scrollY;
+    let bottom = bounds.bottom + window.scrollY;
+
+    if (window.scrollY > bottom - threshold) {
+        let dst = threshold - bounds.bottom;
+        return clamp01(1 - dst / threshold);
+    }
 
     if (window.scrollY + window.innerHeight > top) {
         let dst = window.scrollY + window.innerHeight - top;
-        return clamp01(dst / 200);
+        return clamp01(dst / threshold);
     }
 
     return 1;
