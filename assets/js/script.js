@@ -12,16 +12,14 @@ for (let i = 0; i < content_boxes.length; i++) {
 }
 
 function calculateOpacity(bounds) {
-    var progress = getProgress(window.scrollY + window.innerHeight / 2, bounds.top + window.scrollY, bounds.bottom + window.scrollY);
-    if (progress >= 0 && progress <= 1) {
-        return clamp01(progress * 8) - clamp01((progress - 0.875) * 8);
-    }
-    
-    return 0;
-}
+    let top = bounds.top + window.scrollY;
 
-function getProgress(num, start, stop) {
-    return (num - start) / (stop - start);
+    if (window.scrollY + window.innerHeight > top) {
+        let dst = window.scrollY + window.innerHeight - top;
+        return clamp01(dst / 200);
+    }
+
+    return 1;
 }
 
 // scroll text fading effect
