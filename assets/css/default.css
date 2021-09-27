@@ -23,13 +23,11 @@ a {
     background: linear-gradient(rgb(0, 0, 0), rgb(23, 25, 34));
 }
 
-.logo-area {
-    display: grid;
-    place-content: center;
-}
-
 .logo {
-    padding-top: calc(50vh - 29.448px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @keyframes scroll-text-appear {
@@ -38,10 +36,11 @@ a {
 }
 
 .scroll-text {
+    z-index: 1;
     position: fixed;
     bottom: 15px;
     left: calc(50vw - 4.5ch);
-    color: rgb(180, 180, 180);
+    color: rgb(224, 224, 224, 0.5);
     opacity: 0;
     animation: scroll-text-appear 1.5s ease-out 2.5s forwards;
     font-size: 20px;
@@ -50,4 +49,37 @@ a {
 
 .scroll-text:hover {
     font-size: 22px;
+}
+
+.main-content-area {
+    z-index: 0;
+    position: absolute;
+    display: grid;
+    row-gap: 250px;
+    top: calc(100vh + 250px);
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content-box {
+    width: 100%;
+    background: rgb(31, 31, 31, 0.5);
+}
+
+.content-box .content-box-line {
+    width: 100%;
+    height: 5px;
+    background: rgb(100, 219, 255);
+}
+
+.content-box .content-box-header {
+    width: 100%;
+    text-align: center;
+}
+
+.content-box .content-box-content-area {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
