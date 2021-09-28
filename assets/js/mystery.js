@@ -1,10 +1,11 @@
 let write_area = document.getElementById("write-area");
 
 const sleep = t => new Promise(s => setTimeout(s, t));
+const storage = window.localStorage;
 
 let current_num = 0;
-if (Cookies.get("value")) {
-    current_num = parseInt(Cookies.get("value"));
+if (storage.getItem("value")) {
+    current_num = parseInt(storage.getItem("value"));
 }
 
 switch (current_num) {
@@ -19,7 +20,7 @@ switch (current_num) {
         break;
     case 3:
     case 4:
-        Cookies.set("value", current_num + 1);
+        storage.setItem("value", current_num + 1);
         break;
     case 5:
         action_5();
@@ -36,7 +37,7 @@ switch (current_num) {
     case 9:
     case 10:
     case 11:
-        Cookies.set("value", current_num + 1);
+        storage.setItem("value", current_num + 1);
         break;
     case 12:
         action_12();
@@ -55,7 +56,7 @@ switch (current_num) {
         break;
     case 17:
     case 18:
-        Cookies.set("value", current_num + 1);
+        storage.setItem("value", current_num + 1);
         break;
     case 19:
         action_19();
@@ -64,14 +65,14 @@ switch (current_num) {
         action_20();
         break;
     case 21:
+        action_21();
+        break;
     case 22:
-        action_21_22();
+        action_22();
         break;
     case 23:
-        Cookies.set("value", current_num + 1);
-        break;
     case 24:
-        action_24();
+        storage.setItem("value", current_num + 1);
         break;
     case 25:
         action_25();
@@ -80,7 +81,7 @@ switch (current_num) {
         action_26();
         break;
     case 27:
-        Cookies.set("value", current_num + 1);
+        storage.setItem("value", current_num + 1);
         break;
     case 28:
         action_28();
@@ -114,7 +115,7 @@ async function action_0() {
     write_area.innerHTML += "<br>";
     await typeWrite("> ");
     await acceptUserInput();
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_1() {
@@ -132,7 +133,7 @@ async function action_1() {
 	await typeWrite("I'll close it for you.", 50);
 	await sleep(500);
 	await typeWrite(" You better delete the file actually.", 50);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_2() {
@@ -149,21 +150,21 @@ async function action_2() {
 	await sleep(500);
     write_area.innerHTML += "<br>";
 	await typeWrite("Right now.", 40);
-	Cookies.set("value", current_num + 1);
+	storage.setItem("value", current_num + 1);
 }
 
 async function action_5() {
     await typeWrite("ENCH");
     write_area.innerHTML += "<br><br>";
     await typeWrite("Ench is a character made by enchart and the antagonist of enchart's Peer Gynt level.", 50);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_6() {
     await typeWrite("HISTORY");
     write_area.innerHTML += "<br><br>";
     await typeWrite("In enchart's Peer Gynt, Ench got stabbed by the pink triangle and tried to kill the player that got in his way with the help of his new powers. After a while a strange \"Leader\" sign appears and stabs Ench to turn him into his Leader form. Then he starts trying to smash the player with hammers and after a few tries he traps the player between pink walls that going to crush him. But right before it some other shapes appear, save the player from walls and kill Ench.", 50);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_7() {
@@ -172,7 +173,7 @@ async function action_7() {
     await typeWrite("Ench is a mint square with black eyes and mouth white hands. He also had a pink triangle in the right side before his death. In his corrupted form, his mouth is replaced by four teeth and his body is pink. In the Leader form, he has his regular mouth, and some parts of his body are chipped.", 50);
     write_area.innerHTML += "<br>";
     await typeWrite("His attacks are usually pink lasers, bullets and hammers. He can also teleport the player to The Pink Tower with large amount of traps.", 50);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_8() {
@@ -189,7 +190,7 @@ async function action_8() {
 	{
 		await typeWrite("PGEV.EXE ", 2);
 	}
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_12() {
@@ -198,57 +199,57 @@ async function action_12() {
 	{
 		await typeWrite("PGEV.EXE ", 2);
 	}
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_13() {
     await typeWrite("PLEASE STOP aHR0cHM6Ly", 25);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_14() {
     await typeWrite("WE'RE ALL 90aW55dXJs IN DANGER", 25);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_15() {
     await typeWrite("I LOVE PGEV, IT'S LmNvbS9wZ2 THE BEST LEVEL IN PA!", 25);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_16() {
     await typeWrite("This file does not contain any V2ZG90ZXhl", 25);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_19() {
     await typeWrite("Please consider playing Peer Gynt by Enchariud! https://stea", 25);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_20() {
     await typeWrite("is a class in PA code that manipulates the beatmap, editor an", 50);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
-async function action_21_22() {
+async function action_21() {
     await typeWrite("nd, Arbis has to collect all four Po", 50);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
-async function action_24() {
+async function action_22() {
     await typeWrite("ped creatures that swirled around the weird bi", 25);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_25() {
     await typeWrite("235095218855084032", 10);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_26() {
     await typeWrite("LEADER LEADER DATAM LEADER DATAMANAGER LEADER DATAM TATAM MANAGER DATAMANAGER LEAADER DA", 25);
-    Cookies.set("value", current_num + 1);
+    storage.setItem("value", current_num + 1);
 }
 
 async function action_28() {
@@ -260,7 +261,7 @@ async function action_28() {
 	await sleep(50);
     write_area.innerHTML += "<br>";
 	await typeWrite("- L", 50);
-	Cookies.remove("value");
+	storage.clear();
 }
 
 async function typeWrite(msg, timeout) {
