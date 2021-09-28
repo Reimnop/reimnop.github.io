@@ -154,21 +154,21 @@ async function action_2() {
 }
 
 async function action_5() {
-    await typeWrite("ENCH");
+    await typeWrite("ENCH", 50);
     write_area.innerHTML += "<br><br>";
     await typeWrite("Ench is a character made by enchart and the antagonist of enchart's Peer Gynt level.", 50);
     storage.setItem("value", current_num + 1);
 }
 
 async function action_6() {
-    await typeWrite("HISTORY");
+    await typeWrite("HISTORY", 50);
     write_area.innerHTML += "<br><br>";
     await typeWrite("In enchart's Peer Gynt, Ench got stabbed by the pink triangle and tried to kill the player that got in his way with the help of his new powers. After a while a strange \"Leader\" sign appears and stabs Ench to turn him into his Leader form. Then he starts trying to smash the player with hammers and after a few tries he traps the player between pink walls that going to crush him. But right before it some other shapes appear, save the player from walls and kill Ench.", 50);
     storage.setItem("value", current_num + 1);
 }
 
 async function action_7() {
-    await typeWrite("APPEARANCE");
+    await typeWrite("APPEARANCE", 50);
     write_area.innerHTML += "<br><br>";
     await typeWrite("Ench is a mint square with black eyes and mouth white hands. He also had a pink triangle in the right side before his death. In his corrupted form, his mouth is replaced by four teeth and his body is pink. In the Leader form, he has his regular mouth, and some parts of his body are chipped.", 50);
     write_area.innerHTML += "<br>";
@@ -177,7 +177,7 @@ async function action_7() {
 }
 
 async function action_8() {
-    await typeWrite("TRIVIA");
+    await typeWrite("TRIVIA", 50);
     write_area.innerHTML += "<br><br>";
     await typeWrite("- Ench's full name is Enchariud", 50);
     write_area.innerHTML += "<br>";
