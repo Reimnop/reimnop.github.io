@@ -88,7 +88,7 @@ a {
 .repo-btn-area {
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
 }
 
 .repo-btn {
@@ -110,15 +110,17 @@ a {
 }
 
 .repo-btn .repo-btn-name {
-    padding-left: 5px;
-    width: calc(100% - 5px);
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    width: calc(100% - 0.5em);
     font-size: 1.25em;
     font-weight: bold;
 }
 
 .repo-btn .repo-btn-description {
-    padding-left: 5px;
-    width: calc(100% - 5px);
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+    width: calc(100% - 0.5em);
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -127,8 +129,10 @@ a {
 }
 
 .repo-btn .repo-btn-last-commit {
-    padding-left: 5px;
-    width: calc(100% - 5px);
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    width: calc(100% - 0.5em);
     font-style: italic;
     margin-top: auto;
 }
