@@ -86,16 +86,13 @@ a {
 }
 
 .repo-btn-area {
-    display: flex;
+    display: grid;
     gap: 20px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(11em, 1fr));
 }
 
 .repo-btn {
     display: flex;
-    flex-shrink: 0;
-    flex-grow: 1;
-    flex-basis: 240px;
     flex-direction: column;
     text-decoration: none;
     background: rgb(31, 31, 31, 0.5);
