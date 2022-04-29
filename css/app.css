@@ -424,11 +424,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.mt-auto {
-  margin-top: auto;
+.fixed {
+  position: fixed;
 }
-.mt-32 {
-  margin-top: 8rem;
+.bottom-2 {
+  bottom: 0.5rem;
 }
 .mt-16 {
   margin-top: 4rem;
@@ -555,8 +555,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 .animate-reveal2 {
-  -webkit-animation: reveal2 0.2s 0.8s forwards;
-          animation: reveal2 0.2s 0.8s forwards;
+  -webkit-animation: reveal2 0.4s 0.8s forwards;
+          animation: reveal2 0.4s 0.8s forwards;
+}
+@-webkit-keyframes reveal3 {
+
+  0% {
+    transform: translateY(100%);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+@keyframes reveal3 {
+
+  0% {
+    transform: translateY(100%);
+    opacity: 0%;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+.animate-reveal3 {
+  -webkit-animation: reveal3 0.8s forwards;
+          animation: reveal3 0.8s forwards;
 }
 .flex-row {
   flex-direction: row;
@@ -589,9 +617,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .italic {
   font-style: italic;
 }
-.text-gray-700 {
+.text-gray-500 {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 .text-gray-300 {
   --tw-text-opacity: 1;
@@ -608,13 +636,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.transition {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 .duration-200 {
   transition-duration: 200ms;
@@ -666,12 +687,6 @@ h6 {
 .hover\:bg-gray-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.active\:scale-105:active {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .active\:scale-110:active {
