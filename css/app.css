@@ -433,33 +433,138 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-z-10 {
   z-index: -10;
 }
-.m-auto {
-  margin: auto;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
-.mt-16 {
-  margin-top: 4rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.inline {
+  display: inline;
 }
 .flex {
   display: flex;
 }
-.grid {
-  display: grid;
+.h-6 {
+  height: 1.5rem;
 }
 .h-screen {
   height: 100vh;
 }
+.h-full {
+  height: 100%;
+}
+.h-48 {
+  height: 12rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-24 {
+  height: 6rem;
+}
+.h-4 {
+  height: 1rem;
+}
 .h-8 {
   height: 2rem;
+}
+.h-16 {
+  height: 4rem;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-screen {
   width: 100vw;
 }
-.w-32 {
-  width: 8rem;
+.w-full {
+  width: 100%;
+}
+.w-24 {
+  width: 6rem;
+}
+.w-8 {
+  width: 2rem;
+}
+.w-12 {
+  width: 3rem;
+}
+.w-16 {
+  width: 4rem;
+}
+.w-20 {
+  width: 5rem;
+}
+.min-w-0 {
+  min-width: 0px;
 }
 .translate-x-\[calc\(50vw-50\%\)\] {
   --tw-translate-x: calc(50vw - 50%);
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+@-webkit-keyframes reveal {
+
+  0% {
+    transform: translateY(100%) scale(50%);
+    opacity: 0%;
+  }
+
+  70% {
+    transform: translateY(-5%) scale(105%);
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translateY(0%) scale(100%);
+    opacity: 100%;
+  }
+}
+@keyframes reveal {
+
+  0% {
+    transform: translateY(100%) scale(50%);
+    opacity: 0%;
+  }
+
+  70% {
+    transform: translateY(-5%) scale(105%);
+    opacity: 100%;
+  }
+
+  100% {
+    transform: translateY(0%) scale(100%);
+    opacity: 100%;
+  }
+}
+.animate-reveal {
+  -webkit-animation: reveal 0.8s forwards;
+          animation: reveal 0.8s forwards;
+}
+@-webkit-keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 @-webkit-keyframes bounce {
 
@@ -517,96 +622,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-animation: reveal2 0.4s 0.8s forwards;
           animation: reveal2 0.4s 0.8s forwards;
 }
-@-webkit-keyframes reveal {
-
-  0% {
-    transform: translateY(100%) scale(50%);
-    opacity: 0%;
-  }
-
-  70% {
-    transform: translateY(-5%) scale(105%);
-    opacity: 100%;
-  }
-
-  100% {
-    transform: translateY(0%) scale(100%);
-    opacity: 100%;
-  }
-}
-@keyframes reveal {
-
-  0% {
-    transform: translateY(100%) scale(50%);
-    opacity: 0%;
-  }
-
-  70% {
-    transform: translateY(-5%) scale(105%);
-    opacity: 100%;
-  }
-
-  100% {
-    transform: translateY(0%) scale(100%);
-    opacity: 100%;
-  }
-}
-.animate-reveal {
-  -webkit-animation: reveal 0.8s forwards;
-          animation: reveal 0.8s forwards;
-}
-@-webkit-keyframes pulse {
-
-  50% {
-    opacity: .5;
-  }
-}
-@keyframes pulse {
-
-  50% {
-    opacity: .5;
-  }
-}
-.animate-pulse {
-  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-@-webkit-keyframes reveal3 {
-
-  0% {
-    transform: translateY(100%);
-    opacity: 0%;
-  }
-
-  100% {
-    transform: translateY(0%);
-    opacity: 100%;
-  }
-}
-@keyframes reveal3 {
-
-  0% {
-    transform: translateY(100%);
-    opacity: 0%;
-  }
-
-  100% {
-    transform: translateY(0%);
-    opacity: 100%;
-  }
-}
-.animate-reveal3 {
-  -webkit-animation: reveal3 0.8s forwards;
-          animation: reveal3 0.8s forwards;
-}
 .flex-row {
   flex-direction: row;
 }
 .flex-col {
   flex-direction: column;
-}
-.content-center {
-  align-content: center;
 }
 .items-center {
   align-items: center;
@@ -614,15 +634,59 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center {
   justify-content: center;
 }
+.gap-8 {
+  gap: 2rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.self-end {
+  align-self: flex-end;
+}
+.self-center {
+  align-self: center;
+}
+.rounded-\[128px\] {
+  border-radius: 128px;
+}
 .rounded {
   border-radius: 0.25rem;
 }
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.rounded-\[2rem\] {
+  border-radius: 2rem;
+}
+.rounded-2xl {
+  border-radius: 1rem;
+}
+.rounded-r-xl {
+  border-top-right-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+.bg-gray-700\/30 {
+  background-color: rgb(55 65 81 / 0.3);
+}
+.bg-gray-600\/30 {
+  background-color: rgb(75 85 99 / 0.3);
+}
+.p-8 {
+  padding: 2rem;
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .text-center {
   text-align: center;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .uppercase {
   text-transform: uppercase;
@@ -634,28 +698,35 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity));
+.no-underline {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
+.\!no-underline {
+  -webkit-text-decoration-line: none !important;
+          text-decoration-line: none !important;
 }
 .opacity-0 {
   opacity: 0;
 }
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.transition {
-  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 .duration-200 {
   transition-duration: 200ms;
@@ -672,6 +743,12 @@ body {
   font-family: Montserrat, sans-serif;
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-underline-offset: 1px;
 }
 
 h1 {
@@ -704,25 +781,35 @@ h6 {
   line-height: 1.75rem;
 }
 
-.hover\:bg-gray-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-}
-
-.active\:scale-110:active {
+.hover\:scale-110:hover {
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.active\:bg-gray-800:active {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+.hover\:bg-gray-600\/30:hover {
+  background-color: rgb(75 85 99 / 0.3);
+}
+
+.hover\:bg-gray-500\/30:hover {
+  background-color: rgb(107 114 128 / 0.3);
 }
 
 @media (min-width: 768px) {
 
+  .md\:m-auto {
+    margin: auto;
+  }
+
   .md\:w-2\/3 {
     width: 66.666667%;
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:self-start {
+    align-self: flex-start;
   }
 }
