@@ -692,6 +692,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .duration-200 {
   transition-duration: 200ms;
 }
+.rendering-pixelated {
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: pixelated;
+}
 
 body {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
