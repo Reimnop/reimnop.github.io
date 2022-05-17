@@ -103,7 +103,6 @@
     }
 
     void main() {
-        TexCoord *= 2;
         float xStep = 1.0 / resolution.x * 2.0;
         vec2 calculatedTexCoord = vec2(floor(TexCoord.x / xStep) * xStep, TexCoord.y);
 
