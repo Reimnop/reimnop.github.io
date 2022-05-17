@@ -10,5 +10,6 @@
         <GitHubCard name="Xenon1345"/>
         <GitHubCard name="CrimsonCrips"/>
         <GitHubCard name="Miv2nir"/>
+        <GitHubCard name="Malosdaf"/>
     </div>
 </Card>
