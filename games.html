@@ -14,13 +14,15 @@
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-e5ad329d.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.ts-9cbb603b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-da46b06b.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-7fefc291.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/games/_page.svelte-8f4ac795.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/PageWithTitle-56a2c915.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/IconLink-690604c0.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 
 
-<div class="flex flex-col md:flex-row h-screen"><div class="flex flex-row items-center justify-evenly mb-4 mr-0 w-full md:mb-0 md:mr-4 md:w-fit md:flex-col md:justify-center md:items-start gap-4"><a class="flex flex-col md:flex-row gap-4 items-center duration-300 fill-neutral-700 no-underline link svelte-1fiqy05 active" href="/"><div class="duration-300 scale-x-0 scale-y-100 origin-center md:scale-y-0 md:scale-x-100 fill-transparent svelte-1fiqy05 active-div"><svg class="hidden md:block" width="8" height="48" viewBox="0 0 8 48"><path d="M0 0V0C4.41828 0 8 3.58172 8 8V40C8 44.4183 4.41828 48 0 48V48V0Z"></path></svg>
+<div class="flex flex-col md:flex-row h-screen"><div class="flex flex-row items-center justify-evenly mb-4 mr-0 w-full md:mb-0 md:mr-4 md:w-fit md:flex-col md:justify-center md:items-start gap-4"><a class="flex flex-col md:flex-row gap-4 items-center duration-300 fill-neutral-700 no-underline link svelte-1fiqy05" href="/"><div class="duration-300 scale-x-0 scale-y-100 origin-center md:scale-y-0 md:scale-x-100 fill-transparent svelte-1fiqy05"><svg class="hidden md:block" width="8" height="48" viewBox="0 0 8 48"><path d="M0 0V0C4.41828 0 8 3.58172 8 8V40C8 44.4183 4.41828 48 0 48V48V0Z"></path></svg>
         <svg class="block md:hidden" width="48" height="8" viewBox="0 0 48 8"><path d="M0 0H48V0C48 4.41828 44.4183 8 40 8H8C3.58172 8 0 4.41828 0 0V0Z"></path></svg></div>
     <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 48 48"><path d="M6.9 43.1V17.4L24 4.55 41.15 17.4v25.7h-12.9V27.7h-8.5v15.4Z"></path></svg>
     <h5 class="duration-300 origin-left scale-x-0 text-transparent whitespace-nowrap hidden md:block svelte-1fiqy05">Home</h5>
@@ -30,29 +32,42 @@
     <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 48 48"><path d="M24 23.35q-3.85 0-6.225-2.4-2.375-2.4-2.375-6.2 0-3.8 2.375-6.2Q20.15 6.15 24 6.15q3.8 0 6.225 2.375t2.425 6.225q0 3.8-2.4 6.2-2.4 2.4-6.25 2.4ZM6.9 41.5v-5.8q0-2.2 1.15-3.825T11 29.4q3.4-1.6 6.575-2.35 3.175-.75 6.375-.75 3.3 0 6.45.8 3.15.8 6.55 2.3 1.9.8 3.05 2.45 1.15 1.65 1.15 3.85v5.8Z"></path></svg>
     <h5 class="duration-300 origin-left scale-x-0 text-transparent whitespace-nowrap hidden md:block svelte-1fiqy05">About me</h5>
 </a>
-    <a class="flex flex-col md:flex-row gap-4 items-center duration-300 fill-neutral-700 no-underline link svelte-1fiqy05" href="/games"><div class="duration-300 scale-x-0 scale-y-100 origin-center md:scale-y-0 md:scale-x-100 fill-transparent svelte-1fiqy05"><svg class="hidden md:block" width="8" height="48" viewBox="0 0 8 48"><path d="M0 0V0C4.41828 0 8 3.58172 8 8V40C8 44.4183 4.41828 48 0 48V48V0Z"></path></svg>
+    <a class="flex flex-col md:flex-row gap-4 items-center duration-300 fill-neutral-700 no-underline link svelte-1fiqy05 active" href="/games"><div class="duration-300 scale-x-0 scale-y-100 origin-center md:scale-y-0 md:scale-x-100 fill-transparent svelte-1fiqy05 active-div"><svg class="hidden md:block" width="8" height="48" viewBox="0 0 8 48"><path d="M0 0V0C4.41828 0 8 3.58172 8 8V40C8 44.4183 4.41828 48 0 48V48V0Z"></path></svg>
         <svg class="block md:hidden" width="48" height="8" viewBox="0 0 48 8"><path d="M0 0H48V0C48 4.41828 44.4183 8 40 8H8C3.58172 8 0 4.41828 0 0V0Z"></path></svg></div>
     <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 48 48"><path d="M7.4 39.1q-2.5 0-3.85-1.8t-1-4.4L4.9 16.3q.35-3.05 2.8-5.25 2.45-2.2 5.55-2.2H34.8q3.05 0 5.525 2.225Q42.8 13.3 43.15 16.3l2.3 16.6q.4 2.7-1.05 4.45-1.45 1.75-3.75 1.75-1.25 0-2.3-.45-1.05-.45-1.7-1.15l-5-4.9h-15.3l-4.9 4.9q-.65.7-1.7 1.15-1.05.45-2.35.45Zm27.35-13.4q.75 0 1.35-.575.6-.575.6-1.375 0-.7-.575-1.325T34.75 21.8q-.7 0-1.325.6t-.625 1.35q0 .75.6 1.35.6.6 1.35.6Zm-3.8-6q.75 0 1.35-.6.6-.6.6-1.4 0-.7-.575-1.325t-1.375-.625q-.75 0-1.35.6-.6.6-.6 1.35 0 .75.575 1.375t1.375.625ZM15.1 25.4h2.45v-3.45H21v-2.4h-3.45V16.1H15.1v3.45h-3.5v2.4h3.5Z"></path></svg>
     <h5 class="duration-300 origin-left scale-x-0 text-transparent whitespace-nowrap hidden md:block svelte-1fiqy05">Games</h5>
 </a>
     
     <p class="px-4 text-neutral-700">not all pages are fully implemented!</p></div>
-    <div class="overflow-x-hidden overflow-y-auto w-full h-full p-8">
+    <div class="overflow-x-hidden overflow-y-auto w-full h-full p-8"><div class="max-w-6xl mx-auto flex flex-col gap-8"><h1 class="self-center w-fit uppercase duration-300 hover:scale-110">GAMES</h1>
+    
+    <span class="h-[2px] w-full bg-neutral-700"></span>
+    <div class="flex flex-col gap-8"><div class="bg-neutral-800 rounded-xl p-8 "><div class="flex flex-col gap-8 mb-8"><div class="flex gap-4 items-center"><svg width="16" height="24" class="flex-none" viewBox="0 0 32 48" xmlns="http://www.w3.org/2000/svg"><path d="M0 32V0L32 24L0 48Z"></path></svg>
+        <img src="/_app/immutable/assets/minecraft-fecaf73b.webp" width="40" height="40" alt="Minecraft">
+        <h3>Minecraft</h3></div>
+    
+    <span class="h-[2px] w-full bg-neutral-700"></span></div>
+
+    <div class="grid place-items-center"><div class="animate-spin"><svg width="76" height="76" viewBox="-38 -38 76 76"><circle r="32" stroke="#171717" stroke-width="12" stroke-linecap="round" fill="transparent"></circle><circle r="32" stroke="#f5f5f5" stroke-width="12" stroke-linecap="round" stroke-dasharray="201.06192982974676" stroke-dashoffset="140.74335088082273" fill="transparent"></circle></svg></div></div></div>
+        <div class="bg-neutral-800 rounded-xl p-8 "><div class="flex flex-col gap-8 mb-8"><div class="flex gap-4 items-center"><svg width="16" height="24" class="flex-none" viewBox="0 0 32 48" xmlns="http://www.w3.org/2000/svg"><path d="M0 32V0L32 24L0 48Z"></path></svg>
+        <img src="/_app/immutable/assets/destiny2-5eb30cd4.webp" width="40" height="40" alt="Destiny 2">
+        <h3>Destiny 2</h3></div>
+    
+    <span class="h-[2px] w-full bg-neutral-700"></span></div>
+
+    <div class="grid place-items-center"><div class="animate-spin"><svg width="76" height="76" viewBox="-38 -38 76 76"><circle r="32" stroke="#171717" stroke-width="12" stroke-linecap="round" fill="transparent"></circle><circle r="32" stroke="#f5f5f5" stroke-width="12" stroke-linecap="round" stroke-dasharray="201.06192982974676" stroke-dashoffset="140.74335088082273" fill="transparent"></circle></svg></div></div></div></div></div></div></div>
 
 
-<div class="h-full grid place-items-center"><h1 class="text-7xl md:text-9xl tracking-widest font-incosolata duration-300 hover:scale-110 animate-pulse uppercase"></h1></div></div></div>
-
-
-		<script type="module" data-sveltekit-hydrate="1d5umzx">
+		<script type="module" data-sveltekit-hydrate="dajgir">
 			import { start } from "./_app/immutable/start-d23db25e.js";
 
 			start({
 				env: {},
 				paths: {"assets":"","base":""},
-				target: document.querySelector('[data-sveltekit-hydrate="1d5umzx"]').parentNode,
+				target: document.querySelector('[data-sveltekit-hydrate="dajgir"]').parentNode,
 				version: "1675013456984",
 				hydrate: {
-					node_ids: [0, 2],
+					node_ids: [0, 4],
 					data: [null,null],
 					form: null,
 					error: null
