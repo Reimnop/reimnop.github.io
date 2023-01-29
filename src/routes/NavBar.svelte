@@ -21,6 +21,5 @@
         <Assignment slot="icon"/>
     </NavButton>
     -->
-    <p class="px-4 text-neutral-700">not all pages are fully implemented!</p>
 </div>
 
