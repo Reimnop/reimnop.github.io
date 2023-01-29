@@ -1,0 +1,8 @@
+<script lang="ts">
+    export let width = 40;
+    export let height = 40;
+</script>
+
+<svg xmlns="http://www.w3.org/2000/svg" height={height} width={width} viewBox="0 0 48 48">
+    <path d="M19.75 43.15 21.9 28.2h-7.8q-.7 0-.95-.5t.2-1.05L26.3 4.85h2.15L26.3 19.8h7.75q.5 0 .825.5.325.5-.025 1L21.9 43.15Z"/>
+</svg>

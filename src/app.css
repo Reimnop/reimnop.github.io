@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Lato&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-lato bg-gradient-to-t from-neutral-900 to-black text-neutral-100 fill-neutral-100 scroll-smooth overflow-hidden;
+}
+
+a {
+    @apply underline underline-offset-1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @apply m-0 p-0 font-bold;
+}
+
+h1 {
+    @apply text-6xl;
+}
+
+h2 {
+    @apply text-5xl;
+}
+
+h3 {
+    @apply text-4xl;
+}
+
+h4 {
+    @apply text-3xl;
+}
+
+h5 {
+    @apply text-xl;
+}
+
+h6 {
+    @apply text-lg;
+}
