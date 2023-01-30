@@ -15,8 +15,8 @@
     let notificationVisible = false;
 
     function updateTooltipPosition(event: MouseEvent) {
-        tooltipX = event.clientX;
-        tooltipY = event.clientY + 24;
+        tooltipX = event.pageX;
+        tooltipY = event.pageY + 24;
     }
 
     function copyToClipboard() {

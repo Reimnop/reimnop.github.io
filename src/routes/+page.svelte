@@ -39,6 +39,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>Reimnop - Home</title>
+</svelte:head>
+
 {#if showInstructionIcon}
     <!-- instruction icon -->
     <!-- centering div -->

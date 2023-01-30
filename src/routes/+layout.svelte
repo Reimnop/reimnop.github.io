@@ -6,13 +6,25 @@
     import { page } from "$app/stores";
 
     $:refresh = $page.route.id;
+
+    let navWidth = 0;
 </script>
 
-<div class="flex flex-col md:flex-row h-screen">
-    <NavBar/>
-    {#key refresh}
-        <div class="overflow-x-hidden overflow-y-auto w-full h-full p-8" in:fly={{y: 64, duration: 300}}>
-            <slot/>
-        </div>
-    {/key}
+<svelte:head>
+    <meta property="og:title" content="Reimnop's Website" />
+    <meta property="og:description" content="Reimnop's personal website in a fresh coat of paint: a new standard of beauty." />
+    <meta property="og:url" content="https://reimnop.com/" />
+</svelte:head>
+
+<div class="min-h-screen">
+    <NavBar bind:width={navWidth} />
+    <div class="w-full h-full flex">
+        <!-- this div just pushes content -->
+        <div style="margin-left: {navWidth}px;" class="hidden md:block"></div>
+        {#key refresh}
+            <div class="w-full h-screen p-8" in:fly={{y: 64, duration: 300}}>
+                <slot />
+            </div>
+        {/key}
+    </div>
 </div>

@@ -16,7 +16,7 @@
             <path d="M0 0H48V0C48 4.41828 44.4183 8 40 8H8C3.58172 8 0 4.41828 0 0V0Z"/>
         </svg>
     </div>
-    <slot name="icon"/>
+    <slot />
     <h5 class="duration-300 origin-left scale-x-0 text-transparent whitespace-nowrap hidden md:block">{label}</h5>
 </a>
 

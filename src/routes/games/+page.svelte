@@ -4,6 +4,10 @@
 	import Minecraft from "./Minecraft.svelte";
 </script>
 
+<svelte:head>
+    <title>Reimnop - Games</title>
+</svelte:head>
+
 <PageWithTitle title="GAMES">
     <div class="flex flex-col gap-8">
         <Minecraft uuid="2d4faffa-8e09-4627-9fdd-a0eddc2fc981" />

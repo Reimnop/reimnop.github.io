@@ -19,6 +19,10 @@
 	import Twitter from "$lib/common/icons/Twitter.svelte";
 </script>
 
+<svelte:head>
+    <title>Reimnop - About me</title>
+</svelte:head>
+
 <PageWithTitle title="ABOUT ME">
     <div class="flex flex-col gap-8">
         <Box>
@@ -54,19 +58,19 @@
         <Box>
             <BoxTitle title="Languages and experience"/>
             <div class="flex flex-col gap-8">
-                <ExperienceBar value={100} tooltip="C#  -  {new Date().getFullYear() - 2017} years" delay={0}>
+                <ExperienceBar value={100} tooltip="C#  -  {new Date().getFullYear() - 2017} years" delay={300}>
                     <img src={CSharp} width="32" height="32" alt="C#"/>
                 </ExperienceBar>
-                <ExperienceBar value={80} tooltip="C++  -  {new Date().getFullYear() - 2019} years" delay={100}>
+                <ExperienceBar value={80} tooltip="C++  -  {new Date().getFullYear() - 2019} years" delay={450}>
                     <img src={CPlusPlus} width="32" height="32" alt="C++"/>
                 </ExperienceBar>
-                <ExperienceBar value={70} tooltip="HTML  -  {new Date().getFullYear() - 2020} years" delay={200}>
+                <ExperienceBar value={70} tooltip="HTML  -  {new Date().getFullYear() - 2020} years" delay={600}>
                     <img src={Html5} width="32" height="32" alt="HTML"/>
                 </ExperienceBar>
-                <ExperienceBar value={70} tooltip="CSS  -  {new Date().getFullYear() - 2020} years" delay={300}>
+                <ExperienceBar value={70} tooltip="CSS  -  {new Date().getFullYear() - 2020} years" delay={750}>
                     <img src={Css3} width="32" height="32" alt="CSS"/>
                 </ExperienceBar>
-                <ExperienceBar value={70} tooltip="JavaScript  -  {new Date().getFullYear() - 2020} years" delay={400}>
+                <ExperienceBar value={70} tooltip="JavaScript  -  {new Date().getFullYear() - 2020} years" delay={900}>
                     <img src={Javascript} width="32" height="32" alt="JavaScript"/>
                 </ExperienceBar>
             </div>
