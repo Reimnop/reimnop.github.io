@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-    @apply font-lato bg-gradient-to-t from-neutral-900 to-black bg-fixed bg-no-repeat bg-cover text-neutral-100 fill-neutral-100 scroll-smooth;
+    @apply font-lato bg-neutral-900 text-neutral-100 fill-neutral-100 scroll-smooth;
 }
 
 a {
