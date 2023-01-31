@@ -23,7 +23,7 @@
             let uuid2: string = data.uuid;
             profile = new McProfile(name, uuid2);
         } catch (e) {
-            console.log(e);
+            console.error(e);
         }
     });
 </script>

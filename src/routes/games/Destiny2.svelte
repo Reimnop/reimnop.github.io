@@ -41,7 +41,7 @@
 
             profile = new Destiny2Profile(name, code, profilePicture, id, characters);
         } catch (e) {
-            console.log(e);
+            console.error(e);
         }
     })
 
