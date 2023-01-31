@@ -16,6 +16,7 @@
             <div class="flex flex-wrap gap-4">
                 <Friend name="enchart" />
                 <Friend name="GermanBread" />
+                <Friend name="GuonuoTW" />
                 <Friend name="CrimsonCrips" />
                 <Friend name="Miv2nir" />
                 <Friend name="Xenon1345" />
