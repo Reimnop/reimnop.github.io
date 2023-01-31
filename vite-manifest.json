@@ -3,33 +3,33 @@
     "file": "_app/immutable/assets/reimnop-a39401e4.webp",
     "src": "src/lib/images/reimnop.webp"
   },
+  "src/lib/images/csharp.svg": {
+    "file": "_app/immutable/assets/csharp-7093478d.svg",
+    "src": "src/lib/images/csharp.svg"
+  },
   "src/lib/images/cpp.svg": {
     "file": "_app/immutable/assets/cpp-7a16311b.svg",
     "src": "src/lib/images/cpp.svg"
   },
-  "src/lib/images/csharp.svg": {
-    "file": "_app/immutable/assets/csharp-7093478d.svg",
-    "src": "src/lib/images/csharp.svg"
+  "src/lib/images/html5.svg": {
+    "file": "_app/immutable/assets/html5-82e7043a.svg",
+    "src": "src/lib/images/html5.svg"
+  },
+  "src/lib/images/css3.svg": {
+    "file": "_app/immutable/assets/css3-6fb93454.svg",
+    "src": "src/lib/images/css3.svg"
+  },
+  "src/lib/images/javascript.svg": {
+    "file": "_app/immutable/assets/javascript-8f6f1d5f.svg",
+    "src": "src/lib/images/javascript.svg"
   },
   "src/lib/images/catalyst.webp": {
     "file": "_app/immutable/assets/catalyst-2307de8e.webp",
     "src": "src/lib/images/catalyst.webp"
   },
-  "src/lib/images/css3.svg": {
-    "file": "_app/immutable/assets/css3-bb2f0172.svg",
-    "src": "src/lib/images/css3.svg"
-  },
   "src/lib/images/discord4fabric.webp": {
     "file": "_app/immutable/assets/discord4fabric-58573683.webp",
     "src": "src/lib/images/discord4fabric.webp"
-  },
-  "src/lib/images/html5.svg": {
-    "file": "_app/immutable/assets/html5-ed8b74df.svg",
-    "src": "src/lib/images/html5.svg"
-  },
-  "src/lib/images/javascript.svg": {
-    "file": "_app/immutable/assets/javascript-931ecce0.svg",
-    "src": "src/lib/images/javascript.svg"
   },
   "src/lib/images/destiny2.webp": {
     "file": "_app/immutable/assets/destiny2-5eb30cd4.webp",
@@ -40,21 +40,8 @@
     "src": "src/lib/images/minecraft.webp"
   },
   "src/routes/+layout.css": {
-    "file": "_app/immutable/assets/_layout-a45eba74.css",
+    "file": "_app/immutable/assets/_layout-e569b110.css",
     "src": "src/routes/+layout.css"
-  },
-  "_stores-21ead197.js": {
-    "file": "_app/immutable/chunks/stores-21ead197.js",
-    "imports": [
-      "_index-5e114e43.js",
-      "_singletons-ddf5d086.js"
-    ]
-  },
-  "_reimnop-efb4905f.js": {
-    "file": "_app/immutable/chunks/reimnop-efb4905f.js",
-    "assets": [
-      "_app/immutable/assets/reimnop-a39401e4.webp"
-    ]
   },
   ".svelte-kit/generated/client-optimized/nodes/5.js": {
     "file": "_app/immutable/chunks/5-3328154d.js",
@@ -62,6 +49,22 @@
     "isDynamicEntry": true,
     "imports": [
       "src/routes/games/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/6.js": {
+    "file": "_app/immutable/chunks/6-c229c093.js",
+    "src": ".svelte-kit/generated/client-optimized/nodes/6.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/projects/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-d46984c4.js",
+    "src": ".svelte-kit/generated/client-optimized/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/credits/+page.svelte"
     ]
   },
   "__layout-da46b06b.js": {
@@ -75,13 +78,34 @@
       "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
     ]
   },
+  "_stores-21ead197.js": {
+    "file": "_app/immutable/chunks/stores-21ead197.js",
+    "imports": [
+      "_index-5e114e43.js",
+      "_singletons-ddf5d086.js"
+    ]
+  },
   ".svelte-kit/generated/client-optimized/nodes/0.js": {
-    "file": "_app/immutable/chunks/0-e0b0207e.js",
+    "file": "_app/immutable/chunks/0-ef9c1f40.js",
     "src": ".svelte-kit/generated/client-optimized/nodes/0.js",
     "isDynamicEntry": true,
     "imports": [
       "__layout-da46b06b.js",
       "src/routes/+layout.svelte"
+    ]
+  },
+  "_reimnop-efb4905f.js": {
+    "file": "_app/immutable/chunks/reimnop-efb4905f.js",
+    "assets": [
+      "_app/immutable/assets/reimnop-a39401e4.webp"
+    ]
+  },
+  ".svelte-kit/generated/client-optimized/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-6744c18f.js",
+    "src": ".svelte-kit/generated/client-optimized/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/aboutme/+page.svelte"
     ]
   },
   "src/routes/+page.svelte": {
@@ -93,41 +117,10 @@
       "_index-007e37a3.js"
     ]
   },
-  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-48a36439.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
-    "isEntry": true,
-    "imports": [
-      "_index-5e114e43.js",
-      "_stores-21ead197.js"
-    ]
-  },
   "_singletons-ddf5d086.js": {
     "file": "_app/immutable/chunks/singletons-ddf5d086.js",
     "imports": [
       "_index-5e114e43.js"
-    ]
-  },
-  "_index-007e37a3.js": {
-    "file": "_app/immutable/chunks/index-007e37a3.js",
-    "imports": [
-      "_index-5e114e43.js"
-    ]
-  },
-  ".svelte-kit/generated/client-optimized/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-1b61695f.js",
-    "src": ".svelte-kit/generated/client-optimized/nodes/3.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/aboutme/+page.svelte"
-    ]
-  },
-  "src/routes/+layout.ts": {
-    "file": "_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
-    "src": "src/routes/+layout.ts",
-    "isEntry": true,
-    "imports": [
-      "__layout-da46b06b.js"
     ]
   },
   "_OpenInNew-e322516b.js": {
@@ -136,56 +129,12 @@
       "_index-5e114e43.js"
     ]
   },
-  "src/routes/projects/+page.svelte": {
-    "file": "_app/immutable/components/pages/projects/_page.svelte-73db6e59.js",
-    "src": "src/routes/projects/+page.svelte",
-    "isEntry": true,
+  ".svelte-kit/generated/client-optimized/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-cc34e7e5.js",
+    "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
+    "isDynamicEntry": true,
     "imports": [
-      "_index-5e114e43.js",
-      "_Box-abcc7948.js",
-      "_IconLink-8a5df62e.js",
-      "_OpenInNew-e322516b.js",
-      "_reimnop-efb4905f.js"
-    ],
-    "assets": [
-      "_app/immutable/assets/catalyst-2307de8e.webp",
-      "_app/immutable/assets/discord4fabric-58573683.webp"
-    ]
-  },
-  "_Badge-bc29b2f6.js": {
-    "file": "_app/immutable/chunks/Badge-bc29b2f6.js",
-    "imports": [
-      "_index-5e114e43.js",
-      "_index-007e37a3.js",
-      "_IconLink-8a5df62e.js"
-    ]
-  },
-  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-8e1480fd.js",
-    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
-    "isEntry": true,
-    "imports": [
-      "_index-5e114e43.js",
-      "_singletons-ddf5d086.js"
-    ],
-    "dynamicImports": [
-      ".svelte-kit/generated/client-optimized/nodes/0.js",
-      ".svelte-kit/generated/client-optimized/nodes/1.js",
-      ".svelte-kit/generated/client-optimized/nodes/2.js",
-      ".svelte-kit/generated/client-optimized/nodes/3.js",
-      ".svelte-kit/generated/client-optimized/nodes/4.js",
-      ".svelte-kit/generated/client-optimized/nodes/5.js",
-      ".svelte-kit/generated/client-optimized/nodes/6.js"
-    ]
-  },
-  "_index-5e114e43.js": {
-    "file": "_app/immutable/chunks/index-5e114e43.js"
-  },
-  "_IconLink-8a5df62e.js": {
-    "file": "_app/immutable/chunks/IconLink-8a5df62e.js",
-    "imports": [
-      "_index-5e114e43.js",
-      "_index-007e37a3.js"
+      "src/routes/+page.svelte"
     ]
   },
   "_BoxTitle-3acafcd0.js": {
@@ -204,16 +153,68 @@
       "_BoxTitle-3acafcd0.js"
     ]
   },
-  ".svelte-kit/generated/client-optimized/nodes/4.js": {
-    "file": "_app/immutable/chunks/4-d46984c4.js",
-    "src": ".svelte-kit/generated/client-optimized/nodes/4.js",
-    "isDynamicEntry": true,
+  "_Box-abcc7948.js": {
+    "file": "_app/immutable/chunks/Box-abcc7948.js",
     "imports": [
-      "src/routes/credits/+page.svelte"
+      "_index-5e114e43.js"
+    ]
+  },
+  "_index-007e37a3.js": {
+    "file": "_app/immutable/chunks/index-007e37a3.js",
+    "imports": [
+      "_index-5e114e43.js"
+    ]
+  },
+  "src/routes/+layout.ts": {
+    "file": "_app/immutable/modules/pages/_layout.ts-9cbb603b.js",
+    "src": "src/routes/+layout.ts",
+    "isEntry": true,
+    "imports": [
+      "__layout-da46b06b.js"
+    ]
+  },
+  "src/routes/projects/+page.svelte": {
+    "file": "_app/immutable/components/pages/projects/_page.svelte-73db6e59.js",
+    "src": "src/routes/projects/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5e114e43.js",
+      "_Box-abcc7948.js",
+      "_IconLink-8a5df62e.js",
+      "_OpenInNew-e322516b.js",
+      "_reimnop-efb4905f.js"
+    ],
+    "assets": [
+      "_app/immutable/assets/catalyst-2307de8e.webp",
+      "_app/immutable/assets/discord4fabric-58573683.webp"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "_app/immutable/components/error.svelte-48a36439.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index-5e114e43.js",
+      "_stores-21ead197.js"
+    ]
+  },
+  "_IconLink-8a5df62e.js": {
+    "file": "_app/immutable/chunks/IconLink-8a5df62e.js",
+    "imports": [
+      "_index-5e114e43.js",
+      "_index-007e37a3.js"
+    ]
+  },
+  "_Badge-bc29b2f6.js": {
+    "file": "_app/immutable/chunks/Badge-bc29b2f6.js",
+    "imports": [
+      "_index-5e114e43.js",
+      "_index-007e37a3.js",
+      "_IconLink-8a5df62e.js"
     ]
   },
   "src/routes/+layout.svelte": {
-    "file": "_app/immutable/components/pages/_layout.svelte-43b8f189.js",
+    "file": "_app/immutable/components/pages/_layout.svelte-ed733ae5.js",
     "src": "src/routes/+layout.svelte",
     "isEntry": true,
     "imports": [
@@ -222,33 +223,14 @@
       "_index-007e37a3.js"
     ],
     "css": [
-      "_app/immutable/assets/_layout-a45eba74.css"
+      "_app/immutable/assets/_layout-e569b110.css"
     ]
   },
-  "_Box-abcc7948.js": {
-    "file": "_app/immutable/chunks/Box-abcc7948.js",
-    "imports": [
-      "_index-5e114e43.js"
-    ]
-  },
-  ".svelte-kit/generated/client-optimized/nodes/6.js": {
-    "file": "_app/immutable/chunks/6-c229c093.js",
-    "src": ".svelte-kit/generated/client-optimized/nodes/6.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/projects/+page.svelte"
-    ]
-  },
-  ".svelte-kit/generated/client-optimized/nodes/2.js": {
-    "file": "_app/immutable/chunks/2-cc34e7e5.js",
-    "src": ".svelte-kit/generated/client-optimized/nodes/2.js",
-    "isDynamicEntry": true,
-    "imports": [
-      "src/routes/+page.svelte"
-    ]
+  "_index-5e114e43.js": {
+    "file": "_app/immutable/chunks/index-5e114e43.js"
   },
   "src/routes/aboutme/+page.svelte": {
-    "file": "_app/immutable/components/pages/aboutme/_page.svelte-7efe8975.js",
+    "file": "_app/immutable/components/pages/aboutme/_page.svelte-5284c619.js",
     "src": "src/routes/aboutme/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -262,9 +244,9 @@
     "assets": [
       "_app/immutable/assets/csharp-7093478d.svg",
       "_app/immutable/assets/cpp-7a16311b.svg",
-      "_app/immutable/assets/html5-ed8b74df.svg",
-      "_app/immutable/assets/css3-bb2f0172.svg",
-      "_app/immutable/assets/javascript-931ecce0.svg"
+      "_app/immutable/assets/html5-82e7043a.svg",
+      "_app/immutable/assets/css3-6fb93454.svg",
+      "_app/immutable/assets/javascript-8f6f1d5f.svg"
     ]
   },
   "src/routes/games/+page.svelte": {
@@ -282,6 +264,24 @@
     "assets": [
       "_app/immutable/assets/destiny2-5eb30cd4.webp",
       "_app/immutable/assets/minecraft-fecaf73b.webp"
+    ]
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-2bf68344.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_index-5e114e43.js",
+      "_singletons-ddf5d086.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/client-optimized/nodes/0.js",
+      ".svelte-kit/generated/client-optimized/nodes/1.js",
+      ".svelte-kit/generated/client-optimized/nodes/2.js",
+      ".svelte-kit/generated/client-optimized/nodes/3.js",
+      ".svelte-kit/generated/client-optimized/nodes/4.js",
+      ".svelte-kit/generated/client-optimized/nodes/5.js",
+      ".svelte-kit/generated/client-optimized/nodes/6.js"
     ]
   }
 }
