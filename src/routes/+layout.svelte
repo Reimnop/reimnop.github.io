@@ -1,5 +1,7 @@
 <script lang="ts">
     import "../app.css";
+    import Header from "$lib/components/Header.svelte";
+	import Footer from "$lib/components/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -8,4 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </svelte:head>
 
-<slot/>
+<div class="flex flex-col min-h-screen">
+    <Header/>
+    <slot/>
+    <Footer/>
+</div>

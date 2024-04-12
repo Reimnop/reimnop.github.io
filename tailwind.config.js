@@ -7,9 +7,10 @@ export default {
     },
     extend: {
       colors: {
-        background: "black",
-        foreground: "white"
-      }
+        background: "#0a0a0a",
+        foreground: "#f0f0f0",
+        accent: "#f0ffff",
+      },
     },
   },
   plugins: [],

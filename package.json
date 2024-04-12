@@ -12,6 +12,8 @@
 		"format": "prettier --write ."
 	},
 	"devDependencies": {
+		"@iconify-json/lucide": "^1.1.181",
+		"@iconify-json/ri": "^1.1.20",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
@@ -30,6 +32,7 @@
 		"tslib": "^2.4.1",
 		"typescript": "^5.0.0",
 		"typescript-eslint": "^7.5.0",
+		"unplugin-icons": "^0.18.5",
 		"vite": "^5.0.3"
 	},
 	"type": "module",
