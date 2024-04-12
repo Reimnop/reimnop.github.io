@@ -3,7 +3,7 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     fontFamily: {
-      body: ["Noto Sans", "sans-serif"]
+      body: ["Inter", "sans-serif"]
     },
     extend: {
       colors: {

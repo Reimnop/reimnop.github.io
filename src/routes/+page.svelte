@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+    import IntroBackground from "$lib/images/IntroBackground.svg";
+</script>
+
+<div class="w-screen h-screen bg-repeat" style="background-image: url('{IntroBackground}')">
+    
+</div>
