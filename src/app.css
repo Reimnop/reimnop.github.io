@@ -4,12 +4,18 @@
     @apply bg-background text-foreground font-body;
   }
   h1 {
-    @apply text-2xl;
+    @apply text-4xl;
   }
   h2 {
-    @apply text-xl;
+    @apply text-3xl;
   }
   h3 {
+    @apply text-2xl;
+  }
+  h4 {
+    @apply text-xl;
+  }
+  h5 {
     @apply text-lg;
   }
 }

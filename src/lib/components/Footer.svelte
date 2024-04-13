@@ -16,6 +16,5 @@
             <TwitterLine/>
         </a>
     </div>
-    <!-- TODO: Change All Rights Reserved to a free license -->
-    <span class="text-center">Copyright&copy; {new Date().getFullYear()} Reimnop. All Rights Reserved.</span>
+    <span class="text-center">Copyright&copy; {new Date().getFullYear()} Reimnop.</span>
 </footer>
