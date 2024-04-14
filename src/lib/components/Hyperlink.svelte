@@ -6,5 +6,5 @@
 
 <a href={href}>
     <slot/>
-    <SquareArrowOutUpRight class="inline-block w-4 h-4"/>
+    <SquareArrowOutUpRight class="inline-block align-text-bottom"/>
 </a>

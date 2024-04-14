@@ -2,7 +2,7 @@
     import GitHubLine from "~icons/ri/github-line";
     import YouTubeLine from "~icons/ri/youtube-line";
     import TwitterLine from "~icons/ri/twitter-line";
-	import Hyperlink from "./Hyperlink.svelte";
+	import Hyperlink from "$lib/components/Hyperlink.svelte";
 </script>
 
 <footer class="min-h-24 p-6 mt-auto grid grid-rows-2 gap-2 border-t-4 border-foreground">
