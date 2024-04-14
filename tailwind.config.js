@@ -9,7 +9,8 @@ export default {
       colors: {
         background: "#0a0a0a",
         foreground: "#f0f0f0",
-        accent: "#68FFFF",
+        foreground2: "#b0b0b0",
+        accent: "#68ffff"
       },
     },
   },

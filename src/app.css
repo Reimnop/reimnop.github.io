@@ -3,6 +3,9 @@
   body {
     @apply bg-background text-foreground font-body;
   }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
   h1 {
     @apply text-4xl;
   }
@@ -17,6 +20,9 @@
   }
   h5 {
     @apply text-lg;
+  }
+  a {
+    @apply text-foreground2 duration-200 hover:text-foreground;
   }
 }
 
